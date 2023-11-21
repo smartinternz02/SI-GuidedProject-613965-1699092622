@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: url("https://c4.wallpaperflare.com/wallpaper/699/347/608/lamborghini-dark-black-side-wallpaper-preview.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        .nav-logo p {
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-left: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+        /* Additional styling for the file upload section */
+        .upload-section {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        .upload-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+
+        }
+        .wrapper {
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            height: 10vh; /* Adjust the height of the container */
+        }
+        .file-upload input[type="file"] {
+            display: none;
+        }
+        .file-upload label {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .file-upload label:hover {
+            background-color: #eee;
+        }
+        .upload-btn, .choose-btn {
+            width: 250px;
+            height: 60px;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+            transition: .3s ease;
+            margin-bottom: 20px; /* Add space between the buttons */
+            color: #000; /* Dark black color */
+            display: block; /* Display the buttons as blocks */
+            text-align: center; /* Center-align the text */
+            line-height: 60px; /* Vertically center the text */
+        }
+
+        /* Larger button for "Choose .mp4 file" */
+        .choose-btn {
+            width: 250px;
+            height: 60px;
+            font-size: 18px; /* Adjust the font size if needed */
+            line-height: 60px; /* Vertically center the text */
+            padding-left: 20px;
+        }        .check-btn {
+            width: 250px;
+            height: 60px;
+            font-weight: 500;
+            background: blue;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+            transition: .3s ease;
+            color: white;
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            font-size: 18px;
+        }
+
+        /* Space between buttons */
+        .spacer {
+            height: 100px; /* Adjust the gap height as needed */
+        }
+
+        /* Text above the "Check" button */
+        .check-heading {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .check-text{
+            display: flex;
+            color: white;
+        }    </style>
+    <title>Parking Detection | Upload Video</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Heading -->
+        <div class="nav-logo">
+            <p>PARKING DETECTION</p>
+        </div>
+
+        <!-- File Upload Section -->
+        <div class="upload-section">
+            <h2>Upload MP4 File</h2>
+            <label for="file" class="choose-btn" style="display: block; text-align: center; margin-bottom: 20px; " >Choose .mp4 file</label>
+            <input type="file" name="file" id="file" class="input-file" style="display: none;">
+            <label for="file" class="upload-btn" style="display: block; text-align: center;">Upload</label>
+        </div>
+        <div class="spacer"></div>
+        <h2 class="check-heading">Check the Parking Slot</h2>
+        <p class="check-text"> Check taskbar for the output window</p>
+        <p class="check-text"> [Press "q" to exit]</p>
+        <br>
+
+        <button class="check-btn">Check</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
